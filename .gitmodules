@@ -133,3 +133,6 @@
 [submodule "bundle/cakephp"]
 	path = bundle/cakephp
 	url = git://github.com/ndreynolds/vim-cakephp.git
+[submodule "bundle/unite"]
+	path = bundle/unite
+	url = https://github.com/Shougo/unite.vim
