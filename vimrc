@@ -41,6 +41,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_working_path_mode = 'rw'
 let g:ctrlp_follow_symlinks=1
+let g:ctrlp_user_command = ['.git/', 'ack-grep -f %s']
 let g:ctrlp_extensions = ['tag']
 
 set tags+=.git/tags
@@ -50,10 +51,14 @@ autocmd FileType less,sass,yml,css,html,php,twig,xml,yaml,sh autocmd BufWritePre
 autocmd BufRead,BufNewFile /etc/nginx/* setf nginx
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+<<<<<<< HEAD
 " syntactic coloration when using an editor from MariaDB's client
 autocmd BufRead,BufNewFile /var/tmp/sql*,/tmp/sql* setf sql
 
 set grepprg=ag\ --ignore-dir\ cache\ --ignore-dir\ .rsync_cache\ --ignore-dir\ web/bundles\ --follow\ --smart-case
+=======
+set grepprg=ack-grep\ --ignore-dir\ cache\ --ignore-dir\ .rsync_cache\ --ignore-dir\ web/bundles\ --follow\ --smart-case
+>>>>>>> change ack alias by ack-grep
 
 set keywordprg=pman
 
