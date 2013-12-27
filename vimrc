@@ -25,15 +25,16 @@ set number " hybrid mode (requires a recent vim)
 set undofile
 set undodir=~/.vim/undo
 
-colorscheme solarized
-let g:solarized_termtrans=1
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
-
+"""""""""""""""""""
+" Color and Fonts "
+"""""""""""""""""""
 set background=dark
+colorscheme molokai
+let g:molokai_original = 1
+lef g:rehash256 = 1 
+
 filetype on
 filetype plugin on
-
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/](\.git|\.hg|\.svn|\.settings|\.sass-cache|cache|log|.rsync_cache)$',
   \ 'file': '.un\~$\|.project$\|.buildpath$\|composer.phar$',
