@@ -51,14 +51,11 @@ autocmd FileType less,sass,yml,css,html,php,twig,xml,yaml,sh autocmd BufWritePre
 autocmd BufRead,BufNewFile /etc/nginx/* setf nginx
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
-<<<<<<< HEAD
 " syntactic coloration when using an editor from MariaDB's client
 autocmd BufRead,BufNewFile /var/tmp/sql*,/tmp/sql* setf sql
 
 set grepprg=ag\ --ignore-dir\ cache\ --ignore-dir\ .rsync_cache\ --ignore-dir\ web/bundles\ --follow\ --smart-case
-=======
 set grepprg=ack-grep\ --ignore-dir\ cache\ --ignore-dir\ .rsync_cache\ --ignore-dir\ web/bundles\ --follow\ --smart-case
->>>>>>> change ack alias by ack-grep
 
 set keywordprg=pman
 
@@ -119,6 +116,7 @@ inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
 noremap <Leader>u :call PhpInsertUse()<CR>
 inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
 noremap <Leader>e :call PhpExpandClass()<CR>
+<<<<<<< HEAD
 
 " Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 vmap <Enter> <Plug>(EasyAlign)
@@ -129,6 +127,9 @@ nmap <Leader>a <Plug>(EasyAlign)
 " php tags update
 noremap <Leader>tu :! .git/hooks/php/ctags/update-ctags<CR>
 
+=======
+map <C-n> :NERDTreeToggle<CR>
+>>>>>>> add command NerdTree
 " Instead of reverting the cursor to the last position in the buffer, we
 " set it to the first line when editing a git commit message
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
