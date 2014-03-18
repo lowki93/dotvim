@@ -139,16 +139,6 @@ au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 :command! -bang -range -nargs=1 -complete=file MoveAppend <line1>,<line2>write<bang> >> <args> | <line1>,<line2>delete _
 
 " Key (re)Mappings {
-  " disable noob keys
-  nnoremap <up> <nop>
-  nnoremap <down> <nop>
-  nnoremap <left> <nop>
-  nnoremap <right> <nop>
-  inoremap <up> <nop>
-  inoremap <down> <nop>
-  inoremap <left> <nop>
-  inoremap <right> <nop>
-
   " @see http://stackoverflow.com/questions/80677/what-is-the-difference-between-c-c-and-c-in-vim
   inoremap <C-c> <Esc><Esc>
 
