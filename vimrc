@@ -166,3 +166,5 @@ au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
         autocmd SwapExists * echohl None
         autocmd SwapExists * sleep 2
     augroup END
+
+let g:neocomplete#enable_at_startup = 1
