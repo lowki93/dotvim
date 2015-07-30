@@ -14,7 +14,7 @@
 - git submodule init
 - git submodule update
 
-to update vim on mac : 
+to update vim on mac :
 - brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
 
 if you don't have permission to write in /usr/local
