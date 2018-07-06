@@ -11,7 +11,7 @@
 
 #For Mac 
 to update vim on mac :
-- brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
+- brew install vim --with-lua
 
 if you don't have permission to write in /usr/local
 - sudo chown -R `whaomi` /usr/local
